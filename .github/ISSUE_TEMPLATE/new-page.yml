@@ -1,0 +1,26 @@
+name: New page
+description: Propose a new example or coverage page
+title: "[page] "
+labels: ["area: coverage"]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Link to the upstream example, reference, or design being ported.
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: Source license
+      description: State the source license and confirm reuse is permitted.
+    validations:
+      required: true
+  - type: textarea
+    id: coverage
+    attributes:
+      label: What will this page cover?
+      description: Describe Bootstrap components, states, or combinations exercised.
+    validations:
+      required: true

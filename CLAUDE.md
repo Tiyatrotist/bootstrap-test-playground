@@ -42,7 +42,7 @@ gh label create upstream-fixed --color 0E8A16 --description "Fixed upstream" --f
    gh search prs --repo twbs/bootstrap "<keywords>"
    ```
    If upstream already has an issue or PR, skip to step 2 and label it `upstream-reported` right away.
-2. Create the issue with the `upstream` label. The title describes the bug in Bootstrap's terms. The body includes:
+2. Create the issue with the `upstream` label, using `.github/ISSUE_TEMPLATE/upstream-bug.yml`. The title describes the bug in Bootstrap's terms. The body includes:
    - **Summary**: one or two sentences
    - **Bootstrap version**: the `v6-dev` commit (from `package-lock.json`, or `git rev-parse HEAD` in a local checkout)
    - **Reproduction**: steps, and the `issues/pg-<number>/` page once it exists

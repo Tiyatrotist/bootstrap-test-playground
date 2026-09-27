@@ -1,0 +1,44 @@
+name: Upstream Bootstrap bug
+description: Track a potential Bootstrap bug reproduced in this playground
+title: "[upstream] "
+labels: ["upstream"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Describe the Bootstrap behavior in one or two sentences.
+    validations:
+      required: true
+  - type: input
+    id: bootstrap-version
+    attributes:
+      label: Bootstrap version
+      description: v6-dev commit from package-lock.json or the Bootstrap checkout.
+      placeholder: "twbs/bootstrap commit SHA"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Include steps and the issues/pg-<number>/ page when available.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-actual
+    attributes:
+      label: Expected / Actual
+      description: State what should happen and what happens instead.
+    validations:
+      required: true
+  - type: textarea
+    id: root-cause
+    attributes:
+      label: Root cause
+      description: Add a twbs/bootstrap file:line permalink when known.
+  - type: textarea
+    id: possible-fix
+    attributes:
+      label: Possible fix
+      description: Describe a candidate fix when known.
