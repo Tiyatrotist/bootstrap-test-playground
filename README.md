@@ -28,6 +28,8 @@ Open <http://localhost:5173>. The home page lists every page, with search and fi
 
 By default, Bootstrap is installed from GitHub (`github:twbs/bootstrap#v6-dev`), and `package-lock.json` pins the commit. Run `npm run update-bootstrap` to move to the latest commit. The toolbar and home page show which commit is in use.
 
+Dependabot updates the playground's other dependencies and its GitHub Actions every week, but never `bootstrap`, so each Bootstrap update stays a deliberate `npm run update-bootstrap`.
+
 To test a **local checkout** instead, such as a branch you're working on:
 
 ```sh
