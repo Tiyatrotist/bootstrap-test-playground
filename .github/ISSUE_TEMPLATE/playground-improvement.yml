@@ -1,6 +1,5 @@
 name: Playground improvement
 description: Improve the playground itself
-title: "[playground] "
 labels: ["enhancement"]
 body:
   - type: dropdown

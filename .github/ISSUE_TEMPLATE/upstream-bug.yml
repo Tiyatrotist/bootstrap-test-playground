@@ -1,6 +1,5 @@
 name: Upstream Bootstrap bug
 description: Track a potential Bootstrap bug reproduced in this playground
-title: "[upstream] "
 labels: ["upstream"]
 body:
   - type: textarea

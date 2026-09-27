@@ -1,6 +1,5 @@
 name: New page
 description: Propose a new example or coverage page
-title: "[page] "
 labels: ["area: coverage"]
 body:
   - type: input

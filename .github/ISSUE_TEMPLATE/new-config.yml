@@ -1,6 +1,5 @@
 name: New configuration
 description: Propose a Bootstrap configuration for the playground
-title: "[config] "
 labels: ["area: customization"]
 body:
   - type: input
