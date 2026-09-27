@@ -1,0 +1,25 @@
+name: New configuration
+description: Propose a Bootstrap configuration for the playground
+labels: ["area: customization"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Configuration name
+      placeholder: "rounded-dark"
+    validations:
+      required: true
+  - type: textarea
+    id: stress
+    attributes:
+      label: What does this configuration stress?
+      description: Explain the variables or Bootstrap behavior this config exercises.
+    validations:
+      required: true
+  - type: textarea
+    id: pages
+    attributes:
+      label: Pages to check
+      description: List the pages or screens that should be verified with this config.
+    validations:
+      required: true
