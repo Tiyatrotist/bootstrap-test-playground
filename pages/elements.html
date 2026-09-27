@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Native HTML elements</title>
+    <meta name="description" content="Native HTML elements and controls for Bootstrap reboot coverage.">
+    <meta name="playground-tags" content="elements, reboot, forms, native">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <script src="/playground-prefs.js"></script>
+    <link rel="stylesheet" href="/src/styles/main.scss" data-playground-styles="main">
+    <link rel="stylesheet" href="/src/styles/tokens.css" data-playground-styles="tokens">
+    <script>
+      if (new URLSearchParams(location.search).get('css') === 'none') {
+        document.querySelectorAll('link[data-playground-styles]').forEach((link) => link.remove())
+      }
+    </script>
+    <script type="module" src="/src/js/main.js"></script>
+  </head>
+  <body>
+    <main class="container py-4">
+      <header class="mb-4">
+        <h1>Native HTML elements</h1>
+        <p>
+          Bootstrap Reboot coverage for native text, lists, tables, forms, embedded content, and
+          interactive elements. Add <code>?css=none</code> to render the same markup without
+          Bootstrap styles.
+        </p>
+      </header>
+
+      <div class="row row-cols-1 row-cols-xl-2 g-4">
+        <article class="col">
+          <div class="border rounded p-3 bg-body text-body" data-bs-theme="light">
+            <h2>Light</h2>
+            <section>
+              <h3>Sections and text</h3>
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <h4>Heading 4</h4>
+              <h5>Heading 5</h5>
+              <h6>Heading 6</h6>
+              <p>
+                Paragraph with <a href="#">a link</a>, <strong>strong text</strong>,
+                <em>emphasis</em>, <mark>mark</mark>, <small>small text</small>,
+                <abbr title="HyperText Markup Language">HTML</abbr>, H<sub>2</sub>O,
+                x<sup>2</sup>, <code>inline code</code>, <kbd>Ctrl</kbd>+<kbd>K</kbd>,
+                <samp>sample output</samp>, and <var>x</var>.
+              </p>
+              <blockquote>
+                <p>A native blockquote used to inspect Reboot spacing and typography.</p>
+                <cite>Bootstrap playground</cite>
+              </blockquote>
+              <pre><code>const reboot = true;</code></pre>
+              <address>123 Example Street<br>Web City</address>
+              <figure>
+                <img
+                  alt="Small inline test image"
+                  width="120"
+                  height="60"
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60'%3E%3Crect width='120' height='60' fill='%23868e96'/%3E%3C/svg%3E"
+                >
+                <figcaption>Native figure caption.</figcaption>
+              </figure>
+            </section>
+
+            <section>
+              <h3>Lists</h3>
+              <ul>
+                <li>Unordered item</li>
+                <li>Another item</li>
+              </ul>
+              <ol>
+                <li>Ordered item</li>
+                <li>Another item</li>
+              </ol>
+              <dl>
+                <dt>Term</dt>
+                <dd>Description for the term.</dd>
+                <dt>Second term</dt>
+                <dd>Second description.</dd>
+              </dl>
+            </section>
+
+            <section>
+              <h3>Table</h3>
+              <table>
+                <caption>Native table caption</caption>
+                <thead>
+                  <tr><th scope="col">Name</th><th scope="col">Value</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">Alpha</th><td>1</td></tr>
+                  <tr><th scope="row">Beta</th><td>2</td></tr>
+                </tbody>
+                <tfoot>
+                  <tr><th scope="row">Total</th><td>3</td></tr>
+                </tfoot>
+              </table>
+            </section>
+
+            <section>
+              <h3>Forms and native controls</h3>
+              <form>
+                <fieldset>
+                  <legend>Inputs</legend>
+                  <p><label>Text <input type="text" value="Text value"></label></p>
+                  <p><label>Search <input type="search" placeholder="Search"></label></p>
+                  <p><label>Email <input type="email" value="person@example.com"></label></p>
+                  <p><label>Number <input type="number" value="42"></label></p>
+                  <p><label>Date <input type="date"></label></p>
+                  <p><label>Color <input type="color" value="#6f42c1"></label></p>
+                  <p><label>File <input type="file"></label></p>
+                  <p><label>Range <input type="range" min="0" max="100" value="50"></label></p>
+                  <p><label><input type="checkbox" checked> Checked checkbox</label></p>
+                  <p><label><input type="checkbox" disabled> Disabled checkbox</label></p>
+                  <p><label><input type="radio" name="light-radio" checked> Radio one</label></p>
+                  <p><label><input type="radio" name="light-radio"> Radio two</label></p>
+                  <p>
+                    <label>
+                      Select
+                      <select>
+                        <option>First option</option>
+                        <option>Second option</option>
+                      </select>
+                    </label>
+                  </p>
+                  <p><label>Textarea <textarea rows="2">Textarea value</textarea></label></p>
+                  <p><button type="button">Native button</button> <button type="button" disabled>Disabled</button></p>
+                  <p><label>Meter <meter min="0" max="100" value="65">65%</meter></label></p>
+                  <p><label>Progress <progress max="100" value="65">65%</progress></label></p>
+                  <output>Output value</output>
+                </fieldset>
+              </form>
+            </section>
+
+            <section>
+              <h3>Interactive</h3>
+              <details>
+                <summary>Details summary</summary>
+                <p>Details content.</p>
+              </details>
+              <dialog open>Open native dialog</dialog>
+            </section>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="border rounded p-3 bg-body text-body" data-bs-theme="dark">
+            <h2>Dark</h2>
+            <section>
+              <h3>Sections and text</h3>
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <h4>Heading 4</h4>
+              <h5>Heading 5</h5>
+              <h6>Heading 6</h6>
+              <p>
+                Paragraph with <a href="#">a link</a>, <strong>strong text</strong>,
+                <em>emphasis</em>, <mark>mark</mark>, <small>small text</small>,
+                <abbr title="HyperText Markup Language">HTML</abbr>, H<sub>2</sub>O,
+                x<sup>2</sup>, <code>inline code</code>, <kbd>Ctrl</kbd>+<kbd>K</kbd>,
+                <samp>sample output</samp>, and <var>x</var>.
+              </p>
+              <blockquote>
+                <p>A native blockquote used to inspect Reboot spacing and typography.</p>
+                <cite>Bootstrap playground</cite>
+              </blockquote>
+              <pre><code>const reboot = true;</code></pre>
+              <address>123 Example Street<br>Web City</address>
+              <figure>
+                <img
+                  alt="Small inline test image"
+                  width="120"
+                  height="60"
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60'%3E%3Crect width='120' height='60' fill='%23868e96'/%3E%3C/svg%3E"
+                >
+                <figcaption>Native figure caption.</figcaption>
+              </figure>
+            </section>
+
+            <section>
+              <h3>Lists</h3>
+              <ul><li>Unordered item</li><li>Another item</li></ul>
+              <ol><li>Ordered item</li><li>Another item</li></ol>
+              <dl>
+                <dt>Term</dt><dd>Description for the term.</dd>
+                <dt>Second term</dt><dd>Second description.</dd>
+              </dl>
+            </section>
+
+            <section>
+              <h3>Table</h3>
+              <table>
+                <caption>Native table caption</caption>
+                <thead><tr><th scope="col">Name</th><th scope="col">Value</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Alpha</th><td>1</td></tr>
+                  <tr><th scope="row">Beta</th><td>2</td></tr>
+                </tbody>
+                <tfoot><tr><th scope="row">Total</th><td>3</td></tr></tfoot>
+              </table>
+            </section>
+
+            <section>
+              <h3>Forms and native controls</h3>
+              <form>
+                <fieldset>
+                  <legend>Inputs</legend>
+                  <p><label>Text <input type="text" value="Text value"></label></p>
+                  <p><label>Search <input type="search" placeholder="Search"></label></p>
+                  <p><label>Email <input type="email" value="person@example.com"></label></p>
+                  <p><label>Number <input type="number" value="42"></label></p>
+                  <p><label>Date <input type="date"></label></p>
+                  <p><label>Color <input type="color" value="#6f42c1"></label></p>
+                  <p><label>File <input type="file"></label></p>
+                  <p><label>Range <input type="range" min="0" max="100" value="50"></label></p>
+                  <p><label><input type="checkbox" checked> Checked checkbox</label></p>
+                  <p><label><input type="checkbox" disabled> Disabled checkbox</label></p>
+                  <p><label><input type="radio" name="dark-radio" checked> Radio one</label></p>
+                  <p><label><input type="radio" name="dark-radio"> Radio two</label></p>
+                  <p>
+                    <label>
+                      Select
+                      <select>
+                        <option>First option</option>
+                        <option>Second option</option>
+                      </select>
+                    </label>
+                  </p>
+                  <p><label>Textarea <textarea rows="2">Textarea value</textarea></label></p>
+                  <p><button type="button">Native button</button> <button type="button" disabled>Disabled</button></p>
+                  <p><label>Meter <meter min="0" max="100" value="65">65%</meter></label></p>
+                  <p><label>Progress <progress max="100" value="65">65%</progress></label></p>
+                  <output>Output value</output>
+                </fieldset>
+              </form>
+            </section>
+
+            <section>
+              <h3>Interactive</h3>
+              <details>
+                <summary>Details summary</summary>
+                <p>Details content.</p>
+              </details>
+              <dialog open>Open native dialog</dialog>
+            </section>
+          </div>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>
